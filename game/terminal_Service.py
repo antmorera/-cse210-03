@@ -1,4 +1,9 @@
-import random
+#I don't know if I need to have the import random in here for the read_number ?? So far this is what
+#I have created in my not normal setup so this kinda like a wireframe that will use the inputs of the
+#to be displayed on the screen and that can also be called by the director. 
+
+
+###This code is still subject to changes or complete termination if is necessary###
 
 
 class Console:
