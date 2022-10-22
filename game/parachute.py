@@ -26,6 +26,15 @@ class Jumper:
             elif self._attempts == 4:
                 self._picture.pop(0)
                 self._picture[0] = "  x"
+
+    def keep_playing(self):
+
+        keep_playing = True
+        
+        if len(self.parachute) == 0:
+            keep_playing = False
+
+        return keep_playing
                 
     def picture(self):
         """Draws the picture by calling the list"""
