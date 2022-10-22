@@ -6,7 +6,7 @@
 ###This code is still subject to changes or complete termination if is necessary###
 
 
-class Console:
+class Terminal_Service:
     "This class will is to get the text and numerical input from the user so it can display it. prompt (string): The prompt to display on each line."
 
     def read(self, prompt):
