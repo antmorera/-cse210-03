@@ -1,2 +1,28 @@
-# cse210-03
-Week 05 cse210
+# Jumper Specification
+
+## Overview
+
+Jumper is a game in which the player seeks to solve a puzzle by guessing the letters of a secret word one at a time. 
+
+## Game Rules
+
+ Jumper is played according to the following rules.
+
+- The puzzle is a secret word randomly chosen from a list.
+- The player guesses a letter in the puzzle.
+- If the guess is correct, the letter is revealed.
+- If the guess is incorrect, a line is cut on the player's parachute.
+- If the puzzle is solved the game is over.
+- If the player has no more parachute the game is over.
+
+## Game Design
+
+This will will the design of our game
+![Game Class Design](jumperClassDesing.png)
+
+## Team Members
+- Cate Schmidt -> <sch21103@byui.edu>
+- Danny Hernandez -> <her17048@byui.edu>
+- Reynaldo Armenta Bravo -> <arm19008@byui.edu>
+- Anthuan Morera Zaldivar -> <mor21098@byui.edu>
+- Alan Montoya -> <mon21033@byui.edu>
