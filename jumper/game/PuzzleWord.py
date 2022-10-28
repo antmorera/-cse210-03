@@ -20,9 +20,3 @@ class Puzzle_Word:
             for line in read_data:
                 clean_line = line.strip()
                 self._wordlist.append(clean_line)
-
-def main():
-    pass
-
-if (__name__ == "__main__"):
-    main()
