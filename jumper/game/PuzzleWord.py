@@ -1,6 +1,6 @@
 import random
 
-class PuzzleWord:
+class Puzzle_Word:
     """ This class will choose a random word from
     a list of words
     """
