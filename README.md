@@ -18,7 +18,7 @@ Jumper is a game in which the player seeks to solve a puzzle by guessing the let
 ## Game Design
 
 This will will the design of our game
-![Game Class Design](jumperClassDesing.png)
+![Game Class Design](jumperClassDesign.png)
 
 ## Team Members
 - Cate Schmidt -> <sch21103@byui.edu>
