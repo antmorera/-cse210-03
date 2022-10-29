@@ -10,7 +10,7 @@ class GameTitle():
         self._terminal_size = shutil.get_terminal_size().columns
         # self.game_title = ""
 
-    def clearConsole(self) -> None:
+    def clear_console(self) -> None:
         """Clear console according the OS
         Returns: nothing
         """
@@ -19,7 +19,7 @@ class GameTitle():
         else:
             os.system('clear')
 
-    def PrintGameTitle(self, game_title) -> None:
+    def print_game_title(self, game_title) -> None:
         """Print a center title in console
         Parameters:
             game_title: string of the game title
