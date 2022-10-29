@@ -20,7 +20,7 @@ class Director:
 
     def do_outputs(self):
 
-        self.puzzleword.draw_word()
+        self.puzzleword.randomWord()
         self.parachute.print_parachute()
 
     def get_inputs(self):
@@ -33,7 +33,7 @@ class Director:
         if correct_guess == False:
             self.parachute.pop_list()
         
-        if self.puzzleword.keep_playing() == True:
+        if self.keep_playing() == True:
         
             if self.parachute.keep_playing() == True:
                 self.keep_playing == True
