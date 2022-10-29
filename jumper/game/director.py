@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 from game.parachute import Jumper
-=======
-from game.terminalservice import Terminal_Service
-from game.terminal_Service import Terminal_Service
->>>>>>> 5c32a4b78dc09a805c08f42abeac6016541c91b5
 from game.parachute import Parachute
-from game.PuzzleWord import PuzzleWord
+from game.puzzleword import PuzzleWord
 
 class Director:
 
@@ -13,7 +8,7 @@ class Director:
 
         self.parachute = Parachute()
         self.keep_playing = True
-        self.puzzleword = PuzzleWord()
+        self.puzzleword = puzzleword()
         self.Letter_used = ""
 
     def start_game(self):
