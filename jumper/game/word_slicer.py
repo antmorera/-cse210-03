@@ -1,4 +1,4 @@
-from PuzzleWord import PuzzleWord
+from puzzleword import PuzzleWord
 
 class WordSlicer:  
 
