@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-from game.parachute import Jumper
-=======
->>>>>>> a746ee901af9714e6ccc688808769b2d50381ead
 from game.parachute import Parachute
-from game.puzzleword import PuzzleWord
+from game.word_slicer import WordSlicer
 
 class Director:
 
