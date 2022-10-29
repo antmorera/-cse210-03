@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+from game.parachute import Jumper
+=======
+>>>>>>> a746ee901af9714e6ccc688808769b2d50381ead
 from game.parachute import Parachute
 from game.puzzleword import PuzzleWord
 
@@ -7,7 +11,7 @@ class Director:
 
         self.parachute = Parachute()
         self.keep_playing = True
-        self.puzzleword = PuzzleWord()
+        self.puzzleword = puzzleword()
         self.Letter_used = ""
 
     def start_game(self):
