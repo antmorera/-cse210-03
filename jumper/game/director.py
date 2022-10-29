@@ -1,5 +1,5 @@
 from game.parachute import Parachute
-from game.puzzleword import PuzzleWord
+from game.word_slicer import WordSlicer
 
 class Director:
 
