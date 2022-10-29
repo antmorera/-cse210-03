@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 from game.parachute import Jumper
+=======
+from game.terminalservice import Terminal_Service
+from game.terminal_Service import Terminal_Service
+>>>>>>> 5c32a4b78dc09a805c08f42abeac6016541c91b5
 from game.parachute import Parachute
 from game.PuzzleWord import PuzzleWord
 
@@ -22,7 +27,7 @@ class Director:
     def do_outputs(self):
 
         self.puzzleword.draw_word()
-        self.parachute.picture()
+        self.parachute.print_parachute()
 
     def get_inputs(self):
 
@@ -32,7 +37,7 @@ class Director:
 
         correct_guess = self.puzzleword.process_guess(self.Letter_used)
         if correct_guess == False:
-            self.parachute.remove_parachute_part()
+            self.parachute.pop_list()
         
         if self.puzzleword.keep_playing() == True:
         
@@ -43,7 +48,7 @@ class Director:
 
                 self.keep_playing = False
                 self.parachute.change_parachute()
-                self.parachute.picture()
+                self.parachute.print_parachute()
         
         else:
             self.keep_playing = False

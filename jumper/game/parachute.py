@@ -27,7 +27,7 @@ class Parachute:
                 self._picture.pop(0)
                 self._picture[0] = "  x"
                 
-    def picture(self):
+    def print_parachute(self):
         """Draws the picture by calling the list"""
         for lines in self._picture:
             print(lines)
