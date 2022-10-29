@@ -1,20 +1,14 @@
-<<<<<<< HEAD:game/director.py
-from game.terminalservice import Terminal_Service
 from game.parachute import Jumper
-=======
-from game.terminal_Service import Terminal_Service
 from game.parachute import Parachute
->>>>>>> 247aa8cfba677752f9c2ad983ec0df9b6049c2da:jumper/game/director.py
-from game.PuzzleWord import Puzzle_Word
+from game.PuzzleWord import PuzzleWord
 
 class Director:
 
     def __init__(self):
 
-        self.terminal_service = Terminal_Service()
         self.parachute = Parachute()
         self.keep_playing = True
-        self.puzzleword = Puzzle_Word()
+        self.puzzleword = PuzzleWord()
         self.Letter_used = ""
 
     def start_game(self):
