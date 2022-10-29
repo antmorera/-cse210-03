@@ -1,5 +1,5 @@
 from game.terminal_Service import Terminal_Service
-from game.parachute import Jumper
+from game.parachute import parachute
 from game.PuzzleWord import Puzzle_Word
 
 class Director:
