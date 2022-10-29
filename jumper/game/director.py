@@ -1,5 +1,10 @@
+<<<<<<< HEAD:game/director.py
 from game.terminalservice import Terminal_Service
 from game.parachute import Jumper
+=======
+from game.terminal_Service import Terminal_Service
+from game.parachute import Parachute
+>>>>>>> 247aa8cfba677752f9c2ad983ec0df9b6049c2da:jumper/game/director.py
 from game.PuzzleWord import Puzzle_Word
 
 class Director:
@@ -7,7 +12,7 @@ class Director:
     def __init__(self):
 
         self.terminal_service = Terminal_Service()
-        self.parachute = Jumper()
+        self.parachute = Parachute()
         self.keep_playing = True
         self.puzzleword = Puzzle_Word()
         self.Letter_used = ""
@@ -23,7 +28,7 @@ class Director:
     def do_outputs(self):
 
         self.puzzleword.draw_word()
-        self.parachute.draw_parachute()
+        self.parachute.picture()
 
     def get_inputs(self):
 
@@ -44,7 +49,7 @@ class Director:
 
                 self.keep_playing = False
                 self.parachute.change_parachute()
-                self.parachute.draw_parachute()
+                self.parachute.picture()
         
         else:
             self.keep_playing = False
