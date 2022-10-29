@@ -1,9 +1,9 @@
-from puzzleword import PuzzleWord
+from game.puzzleword import PuzzleWord
 
 class WordSlicer:  
 
-    def _init(self):
-        self._word = PuzzleWord().randomWord()
+    def __init__(self):
+        self._word = PuzzleWord()._randomWord()
 
     def slicer(self):
         self.sliced_word = list(self._word)

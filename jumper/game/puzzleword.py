@@ -12,21 +12,21 @@ class PuzzleWord:
         self._wordlist = []
 
 
-    def randomWord(self):
+    def _randomWord(self):
         """Method that choose a random word from
         the list of words.
         Returns:
             my_random_word: string
         """
         self.load_list()
-        my_random_word = random.choice(self.wordlist)
+        my_random_word = random.choice(self._wordlist)
         return my_random_word.upper()
 
     def load_list(self):
         """This Method will fill the wordlist
         from a txt file
         """
-        with open("wordlist.txt", "rt") as text_file:
+        with open("cse210-03\wordlist.txt", "rt") as text_file:
             read_data = text_file.readlines()
             for line in read_data:
                 clean_line = line.strip()

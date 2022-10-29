@@ -17,7 +17,7 @@ class Director:
         self._tries = 5
         self._guess_word = self._sliced_word.slicer()
 
-    def startGame(self):
+    def start_game(self):
         """Starts the game by running the main game loop"""
         self._wordTracker()
 
@@ -26,7 +26,7 @@ class Director:
         game for inputs and outputs.
         """
         self._game_title.clear_console()
-        self._game_title.print_game_title()
+        self._game_title.print_game_title("Jumper")
 
     # Logic of the game
     def _wordTracker(self):
