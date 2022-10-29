@@ -7,7 +7,7 @@ class Director:
 
         self.parachute = Parachute()
         self.keep_playing = True
-        self.puzzleword = puzzleword()
+        self.puzzleword = PuzzleWord()
         self.Letter_used = ""
 
     def start_game(self):
