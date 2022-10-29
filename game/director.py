@@ -1,4 +1,4 @@
-from game.terminal_Service import Terminal_Service
+from game.terminalservice import Terminal_Service
 from game.parachute import Jumper
 from game.PuzzleWord import Puzzle_Word
 
