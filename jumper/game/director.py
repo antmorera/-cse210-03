@@ -1,4 +1,3 @@
-from game.parachute import Jumper
 from game.parachute import Parachute
 from game.puzzleword import PuzzleWord
 
