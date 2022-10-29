@@ -1,4 +1,4 @@
-class parachute:
+class Parachute:
     """Keeps track of the jumpers attempts and draws the picture
     
     Args: Create an instance of the jumper"""
