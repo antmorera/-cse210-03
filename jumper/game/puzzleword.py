@@ -26,7 +26,7 @@ class PuzzleWord:
         """This Method will fill the wordlist
         from a txt file
         """
-        with open("cse210-03\wordlist.txt", "rt") as text_file:
+        with open("wordlist.txt", "rt") as text_file:
             read_data = text_file.readlines()
             for line in read_data:
                 clean_line = line.strip()

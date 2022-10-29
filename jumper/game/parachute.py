@@ -1,35 +1,95 @@
 class Parachute:
-    """Keeps track of the jumpers attempts and draws the picture
-    
-    Args: Create an instance of the jumper"""
-    
-    def __init__(self):
-        
-        self._picture = [' ___',
-                         '/___\\',
-                         '\   /',
-                         ' \ /',
-                         '  o',
-                         ' /|\\',
-                         ' / \\']
-        self._attempts = 0
-    
-    def pop_list(self, answer):
-    
-        if answer == False:
-            if self._attempts == 1:
-                self._picture.pop(0)
-            elif self._attempts == 2:
-                self._picture.pop(0)
-            elif self._attempts == 3:
-                self._picture.pop(0)
-            elif self._attempts == 4:
-                self._picture.pop(0)
-                self._picture[0] = "  x"
-                
-    def print_parachute(self):
-        """Draws the picture by calling the list"""
-        for lines in self._picture:
-            print(lines)
+    """This class will track and display
+    the parachute on the console
+    """
+
+    def __init__(self) -> None:
+        self._parachute_index = 0
 
 
+    def print_parachute(self) -> list:
+        """This method will return a list
+        that will show the state of parachute
+        """
+        self.parachute = [
+            """
+            ________
+              
+             
+             
+             
+               X
+              /|\\
+              / \\
+
+            ^^^^^^^
+            """,
+            """
+            ________
+              
+             
+             
+             
+               0
+              /|\\
+              / \\
+
+            ^^^^^^^
+            """,
+            """
+            ________
+              
+             
+             
+              \ /
+               0
+              /|\\
+              / \\
+
+            ^^^^^^^
+            """,
+            """
+            ________
+              
+             
+             \   /
+              \ /
+               0
+              /|\\
+              / \\
+
+            ^^^^^^^
+            """,
+            """
+            ________
+              
+             /___\\
+             \   /
+              \ /
+               0
+              /|\\
+              / \\
+
+            ^^^^^^^
+            """,
+            """
+            ________
+              ___
+             /___\\
+             \   /
+              \ /
+               0
+              /|\\
+              / \\
+
+            ^^^^^^^
+            """
+        ]
+        return self.parachute[self._parachute_index]
+
+    def parachute_chooser(self, index=0) -> None:
+        """This Method will choose from a
+        list the state of the parachute
+        """
+        self._parachute_index = index
+        print(self.print_parachute())

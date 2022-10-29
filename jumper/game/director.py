@@ -37,7 +37,8 @@ class Director:
         while not self._guessed:
             self._display()
             # print(f"\nUncovered word: {''.join(self._guess_word)}\n\n")
-            self._parachuteTracker.parachuteChooser(self._tries)
+            self._parachuteTracker.parachute_chooser(self._tries)
+            print(f"{self._guessed}\n")
             # Word exchange logic
             for letter in self._guess_word:
                 if letter in self._user_guesses:
@@ -67,7 +68,7 @@ class Director:
 
     def _gameOver(self):
         if self._tries == 0:
-            self._guessed = True
+            self._guessed = False
             self._display()
             print(f"""
             
