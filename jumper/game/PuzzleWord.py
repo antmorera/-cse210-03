@@ -1,6 +1,6 @@
 import random
 
-class Puzzle_Word:
+class PuzzleWord:
     """ This class will choose a random word from
     a list of words
     """
@@ -31,3 +31,5 @@ class Puzzle_Word:
             for line in read_data:
                 clean_line = line.strip()
                 self._wordlist.append(clean_line)
+
+
