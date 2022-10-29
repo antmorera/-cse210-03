@@ -28,7 +28,7 @@ class Director:
     def do_outputs(self):
 
         self.puzzleword.draw_word()
-        self.parachute.picture()
+        self.parachute.print_parachute()
 
     def get_inputs(self):
 
@@ -49,7 +49,7 @@ class Director:
 
                 self.keep_playing = False
                 self.parachute.change_parachute()
-                self.parachute.picture()
+                self.parachute.print_parachute()
         
         else:
             self.keep_playing = False
