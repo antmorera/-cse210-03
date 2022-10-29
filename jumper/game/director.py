@@ -1,5 +1,5 @@
-from game.parachutetracker import ParachuteTracker
-from game.wordslicer import WordSlicer
+from game.parachute import Parachute
+from game.word_slicer import WordSlicer
 from game.gametitle import GameTitle
 
 
@@ -9,7 +9,7 @@ class Director:
 
     def __init__(self) -> None:
         self._sliced_word = WordSlicer()
-        self._parachuteTracker = ParachuteTracker()
+        self._parachuteTracker = Parachute()
         self._game_title = GameTitle()
         self._guessed = False
         self._user_guess = ""
@@ -19,13 +19,14 @@ class Director:
 
     def startGame(self):
         """Starts the game by running the main game loop"""
-        pass
+        self._wordTracker()
 
     def _display(self):
         """Display in the console the flow of the
         game for inputs and outputs.
         """
-        pass
+        self._game_title.clear_console()
+        self._game_title.print_game_title()
 
     # Logic of the game
     def _wordTracker(self):
